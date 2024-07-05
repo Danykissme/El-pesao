@@ -7,9 +7,9 @@ let handler = async (m, { conn, text}) => {
 let hasil = Math.floor(Math.random() * 5000)
 
   m.reply(`
-*┏━_͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡_͜͡━┓*\n
-❥ *"${pickRandom(global.piropo)}"*\n\n\t- By おDaniel
-\n*┗━_͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡_͜͡━┛*
+*╭─╮︹︹︹︹⊹︹︹︹⊹︹︹⊹︹*\n
+*⌑* *"${pickRandom(global.piropo)}"*\n\n\t- By DanySR
+\n*╰─ ⊹꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷*
 `)
 }
 handler.tags = ['fun']
