@@ -14,7 +14,7 @@ await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img, canal, estilo)
   }
   
   if (chat.bienvenida && m.messageStubType == 28) {
-    let bye = `┌─★ *${botname}* \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   ┃⬣ Se fue\n   ┃⬣ Le falto odio\n   ╰━━━━━━━ ⬣ ━━━──┈ ⳹`
+    let bye = `⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖ \n ╭┈┈•*${botname}*\n│≼·˚ Se fue un gay. \n│≼·˚ El gay @${m.messageStubParameters[0].split`@`[0]} \n╰────────────────  \n⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖`
 await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal, estilo)
   }
   
