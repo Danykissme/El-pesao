@@ -30,16 +30,16 @@ const defaultMenu = {
   before: `
 *─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-“ Hola *%name* soy *Ai Hoshino*, %greeting ”
+“ ¡Hey, %name ! Soy Sofia-Bot un Bot que aprende de ti :D ”
 
-╭────═[ *I N F O  -  B O T* ]═─────⋆
-│╭───────────────···
-┴│✯ *🍬 Modo* : Público
-✩│✯ *📚 Baileys* : Multi Device
-✩│✯ *⏱ Tiempo Activo* : %muptime
-┬│✯ *👤 Usuarios* : %totalreg
-│╰────────────────···
-╰───────────═┅═──────────
+╭┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄ׅׅ┄꯭ׂ─╮
+│: : 💖 : :₊⸱ ᮨֺ݂ *INFO - BOT*
+││ . *✎Modo:* Publico
+││ . *✎Baileys:* 
+││ . *✎Tiempo activo:*
+││ . *✎Usuarios:* %totalreg
+│✦
+✦
 %readmore
 ╭────═[ *I N F O  -  U S E R* ]═─────⋆
 │╭───────────────···
@@ -54,10 +54,10 @@ const defaultMenu = {
 
 \t\t\t*L I S T A  -  M E N Ú S*
 `.trimStart(),
-  header: '╭───═[ `MENÚ メ %category` ]═────⋆\n│╭───────────────···',
-  body: '✩│%cmd %islimit %isPremium\n',
-  footer: '│╰────────────────···\n╰───────────═┅═──────────\n',
-  after: `> 🚩 ${textbot}`,
+  header: '╭┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄ׅׅ┄꯭ׂ─╮⋆\n││: : 💖 : :₊⸱ ᮨֺ݂ `%𝘊𝘢𝘵𝘦𝘨𝘰𝘳𝘺`',
+  body: '││ .%cmd %islimit %isPremium\n',
+  footer: '│✦\n✦\n',
+  after: `> 🛡️ ${textbot}`,
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -125,8 +125,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
               return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                .replace(/%islimit/g, menu.limit ? '◜⭐◞' : '')
-                .replace(/%isPremium/g, menu.premium ? '◜🪪◞' : '')
+                .replace(/%islimit/g, menu.limit ? '◜✴️◞' : '')
+                .replace(/%isPremium/g, menu.premium ? '◜💙◞' : '')
                 .trim()
             }).join('\n')
           }),
