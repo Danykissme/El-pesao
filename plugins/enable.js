@@ -69,7 +69,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
        break
     default:
       if (!/[01]/.test(command)) return m.reply(`
-*🚩 Ingresa una opción para habilitar o deshabilitar*
+*🛡️ Ingresa una opción para habilitar o deshabilitar*
 
 *≡ Lista de opciones*
 *Tipo :* welcome
@@ -95,7 +95,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 `.trim())
       throw false
   }
-  m.reply(`La función *${type}* se *${isEnable ? 'activó' : 'desactivó'}* ${isAll ? 'para este bot' : isUser ? '' : 'para este chat'}`)
+  m.reply(`🛡️ La función *${type}* se *${isEnable ? 'activó' : 'desactivó'}* ${isAll ? 'para este bot' : isUser ? '' : 'para este chat'}`)
 }
 
 handler.help = ['enable', 'disable']
