@@ -13,7 +13,7 @@ return m.reply(`⏱️ ¡Espera ${msToTime(remainingTime)} antes de volver a usa
 conn.tekateki = conn.tekateki ? conn.tekateki : {}
 let id = m.chat
 if (id in conn.tekateki) {
-conn.reply(m.chat, 'Todavía hay acertijos sin responder en este chat', conn.tekateki[id][0])
+conn.reply(m.chat, '🛡️Todavía hay acertijos sin responder en este chat', conn.tekateki[id][0])
 return null
 }
 let tekateki = JSON.parse(fs.readFileSync(`./plugins/_acertijo.json`))
@@ -29,7 +29,7 @@ conn.tekateki[id] = [
 await conn.reply(m.chat, caption, m), json, poin,
 setTimeout(async () => {
 if (conn.tekateki[id]) {
-await conn.reply(m.chat, `Se acabó el tiempo!\n*Respuesta:* ${json.response}`, conn.tekateki[id][0])
+await conn.reply(m.chat, `Muy lento🐌!\n*Respuesta:* ${json.response}`, conn.tekateki[id][0])
 delete conn.tekateki[id]
 }
 }, cooldown)
