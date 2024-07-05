@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
     conn.reply(m.chat, `
-*LISTA DE  COMANDOS*
+*📃LISTA DE  COMANDOS📃*
 
 *Info:* Si esta en *negrita*  esta bloqueado
 
