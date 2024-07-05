@@ -1,9 +1,9 @@
 let handler = async (m, { conn, command, text }) => {
 	
-    if (!text) return m.reply(`🚩 Ingresa un nombre justo al comando.)
+    if (!text) return m.reply(`🛡️ Ingresa un nombre justo al comando.)
 	
   let personalidad = `
-┏━━°❀❬ *PERSONALIDAD}* ❭❀°━━┓
+┏━━°☃️❬ *PERSONALIDAD}* ❭⛄°━━┓
 *┃*
 *┃• Nombre* : ${text}
 *┃• Buena Moral* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
@@ -15,7 +15,7 @@ let handler = async (m, { conn, command, text }) => {
 *┃• Coraje* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
 *┃• Miedo* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
 *┃• Fama* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
-*┃• Género* : ${pickRandom(['Hombre', 'Mujer', 'Homosexual', 'Bisexual', 'Pansexual', 'Feminista', 'Heterosexual', 'Macho alfa', 'Mujerzona', 'Marimacha', 'Palosexual', 'PlayStationSexual', 'Sr. Manuela', 'Pollosexual'])}
+*┃• Género* : ${pickRandom(['Hombre', 'Mujer', 'Homosexual', 'Bisexual', 'Pansexual', 'Feminista', 'Heterosexual', 'Macho alfa', 'Mujerzona', 'Marimacha', 'Palosexual', 'PlayStationSexual', 'Sr. Manuela', 'Gay'])}
 ┗━━━━━━━━━━━━━━━━
 `
 conn.reply(m.chat, personalidad, m, { mentions: conn.parseMention(personalidad) })
