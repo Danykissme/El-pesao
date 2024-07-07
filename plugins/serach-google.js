@@ -4,12 +4,12 @@ import axios from 'axios';
 let handler = async (m, { conn, command, args, usedPrefix }) => {
   const fetch = (await import('node-fetch')).default;
   const text = args.join` `;
-  if (!text) return conn.reply(m.chat, '🚩 Ingresa lo que deseas buscar junto al comando.', m)
+  if (!text) return conn.reply(m.chat, '🛡️ Ingresa lo que deseas buscar junto al comando.', m)
   await m.react('🕓')
   let img = 'https://i.ibb.co/P5kZNFF/file.jpg'
 const url = 'https://google.com/search?q=' + encodeURIComponent(text);
 google({'query': text}).then(res => {
-let teks = `\t\t\t*乂  S E A R C H  -  G O O G L E*\n\n`
+let teks = `\t\t\t*᥀🌐୭ *G O O G L E - S E A R C H* ᥀🌐୭*\n\n`
 for (let g of res) {
 teks += `*${g.title}*\n${g.link}\n${g.snippet}\n\n`
 } 
