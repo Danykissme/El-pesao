@@ -2,16 +2,16 @@ import axios from 'axios'
 import Starlights from '@StarlightsTeam/Scraper'
 
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
-  if (!text) return conn.reply(m.chat, `🚩 Ingresa el nombre video que deseas buscar en TikTok.\n\nEjemplo:\n> *${usedPrefix + command}* Ai Hoshino Edit`, m, rcanal)
+  if (!text) return conn.reply(m.chat, `🛡️ Ingresa el nombre video que deseas buscar en TikTok.\n\nEjemplo:\n> *${usedPrefix + command}* Madara Uchiha Edit`, m, rcanal)
   
   await m.react('🕓')
-  let img = await (await axios.get('https://i.ibb.co/kyTcqt9/file.jpg', { responseType: 'arraybuffer' })).data
+  let img = await (await axios.get('https://i.ibb.co/9c9cyW0/file.jpg', { responseType: 'arraybuffer' })).data
 
   try {
     let data = await Starlights.tiktokSearch(text)
 
     if (data && data.length > 0) {
-      let txt = `*乂  T I K T O K  -  S E A R C H*`
+      let txt = `*᥀📱୭  *T I K T O K - S E A R C H* ᥀📽️୭`
       for (let i = 0; i < (50 <= data.length ? 50 : data.length); i++) {
         let video = data[i]
         txt += `\n\n`
