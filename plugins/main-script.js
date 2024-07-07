@@ -6,15 +6,15 @@ let res = await fetch('https://api.github.com/repos/StarlightsTeam/Ai-Hoshino')
 let json = await res.json()
 try {
 let txt = `*乂  S C R I P T  -  M A I N*\n\n`
-    txt += `	✩   *Nombre* : ${json.name}\n`
-    txt += `	✩   *Visitas* : ${json.watchers_count}\n`
-    txt += `	✩   *Peso* : ${(json.size / 1024).toFixed(2)} MB\n`
-    txt += `	✩   *Actualizado* : ${moment(json.updated_at).format('DD/MM/YY - HH:mm:ss')}\n`
-    txt += `	✩   *Url* : ${json.html_url}\n`
-    txt += `	✩   *Forks* : ${json.forks_count}\n`
-    txt += `	✩   *Stars* : ${json.stargazers_count}\n\n`
-    txt += `> 🚩 *${textbot}*`
-let img = await (await fetch(`https://i.ibb.co/LQKxczm/file.jpg`)).buffer()
+    txt += `	│ . ✎ *Nombre* : ${json.name}\n`
+    txt += `	│ . ✎ *Visitas* : ${json.watchers_count}\n`
+    txt += `	│ . ✎ *Peso* : ${(json.size / 1024).toFixed(2)} MB\n`
+    txt += `	│ . ✎ *Actualizado* : ${moment(json.updated_at).format('DD/MM/YY - HH:mm:ss')}\n`
+    txt += `	│ . ✎ *Url* : ${json.html_url}\n`
+    txt += `	│ . ✎ *Forks* : ${json.forks_count}\n`
+    txt += `	│ . ✎ *Stars* : ${json.stargazers_count}\n\n`
+    txt += `> 🛡️ *${textbot}*`
+let img = await (await fetch(`https://i.ibb.co/9c9cyW0/file.jpg`)).buffer()
 
 await conn.sendAi(m.chat, botname, textbot, txt, img, img, canal, m)
 } catch {
