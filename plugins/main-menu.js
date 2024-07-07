@@ -30,7 +30,7 @@ const defaultMenu = {
   before: `
 *─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-“ ¡Hey, %name ! Soy Sofia-Bot un Bot que aprende de ti :D ”
+“ ¡Hey, %name ! Soy Sofia un Bot que aprende de ti :D ”
 %readmore
 ╭┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄ׅׅ┄꯭ׂ─╮
 │: : 💖 : :₊⸱ ᮨֺ݂ *INFO - BOT*
@@ -54,7 +54,7 @@ const defaultMenu = {
 
 \t\t\t*L I S T A  -  M E N Ú S*
 `.trimStart(),
-  header: '╭┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄ׅׅ┄꯭ׂ─╮⋆\n││: : 💖 : :₊⸱ ᮨֺ݂ `%c𝘢𝘵𝘦𝘨𝘰𝘳𝘺`',
+  header: '╭┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄ׅׅ┄꯭ׂ─╮⋆\n││: : 💖 : :₊⸱ ᮨֺ݂ `%category`',
   body: '││ .%cmd %islimit %isPremium\n',
   footer: '│✦\n✦\n',
   after: `> 🛡️ ${textbot}`,
