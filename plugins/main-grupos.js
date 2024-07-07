@@ -4,9 +4,9 @@ let handler  = async (m, { conn, usedPrefix, command }) => {
 let img = await (await fetch(`https://i.ibb.co/3N4StyG/file.jpg`)).buffer()
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
-let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D*
+let txt = `*Hola!, te invito a unirte a los grupos oficiales de Sofia-Bot , Diversiones no faltaran :D*
 
-1- 【 ✯ Ai Hoshino - MD ✰ 】
+1- ༺𝖲𝖮𝖥𝖨𝖠-𝖡𝖮𝖳༻
 *✰* ${group}
 
 *─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ*
