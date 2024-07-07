@@ -121,4 +121,4 @@ npm start
 
 <a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/qRfKp3t/file.jpg" width="300" height="300" alt="おDaniel"/></a>
 
-`© Ai Hoshino - MD / Starlights Team _ By おDaniel`
+`༺𝖲𝖮𝖥𝖨𝖠 - 𝖡𝖮𝖳༻ / STAFF XB²🫧 _ By DanySR`
