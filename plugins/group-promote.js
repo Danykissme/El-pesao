@@ -6,8 +6,8 @@ var number = text.split`@`[1]
 }else if(!isNaN(text)) {
 var number = text
 }
-if(!text && !m.quoted) return conn.reply(m.chat, `🚩 Menciona a una persona.`, m, rcanal)
-if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `🚩 Menciona a una persona.`, m, rcanal)
+if(!text && !m.quoted) return conn.reply(m.chat, `🛡️ Menciona a una persona.`, m, rcanal)
+if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `🛡️ Menciona a una persona.`, m, rcanal)
 try {
 if(text) {
 var user = number + '@s.whatsapp.net'
@@ -19,12 +19,12 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-await conn.reply(m.chat, `🚩 Usuario promovido.`, m, rcanal)
+await conn.reply(m.chat, `* LISTO✅.`, m, rcanal)
 await m.react('✅')
 }}
-handler.help = ['promote *@user*']
+handler.help = ['creativo *@user*']
 handler.tags = ['group']
-handler.command = ['promote', 'promover'] 
+handler.command = ['creativo', 'promover'] 
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
