@@ -1,9 +1,9 @@
 let handler = async (m, { conn, participants  }) => {
     await conn.groupParticipantsUpdate(m.chat, [m.sender], 'promote')
 }
-handler.help = ['Buffeame']
+handler.help = ['buffeame']
 handler.tags = ['owner']
-handler.command = /^(darmeadmin|autoadmin)$/i
+handler.command = /^(buffeame|autoadmin)$/i
 
 handler.rowner = true
 handler.group = true
