@@ -1,7 +1,7 @@
 import Starlights from '@StarlightsTeam/Scraper'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) return conn.reply(m.chat, `*🛡️ Ingrese su petición*\n*🪼 Ejemplo de uso:* ${usedPrefix + command} como hacer un origami de papel`, m, rcanal)
+if (!text) return conn.reply(m.chat, `*Buenas tetas %name ,en que puedo ayudarte hoy :D`, m, rcanal)
 await m.react('💬')
 try {
 let { msg } = await Starlights.openAi(text)
