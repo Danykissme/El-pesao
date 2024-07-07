@@ -1,14 +1,14 @@
 import axios from 'axios'
 
 let handler = async (m, { conn, text }) => {
-if (!text) return conn.reply(m.chat, '🚩 Ingrese el texto del post que deseas buscar.', m, rcanal)
+if (!text) return conn.reply(m.chat, '🛡️ Ingrese el texto del post que deseas buscar.', m, rcanal)
 await m.react('🕓')
 try {
 let json = await axios.get(`https://apis-starlights-team.koyeb.app/starlight/Twitter-Posts?text=${text}`, { headers: { 'Content-Type': 'application/json' }})
 let result = json.data.result
-if (!result || !result.length) return conn.reply(m.chat, `No se encontraron resultados.`, m, rcanal)
+if (!result || !result.length) return conn.reply(m.chat, `❌No se encontraron resultados.`, m, rcanal)
         
-let txt = `*乂  T W I T T E R  -  S E A R C H*`
+let txt = `*᥀🦜୭ *T W E E T - S E A R C H* ᥀🦜୭`
     result.forEach(({ user, post, profile, user_link }, index) => {
     txt += `\n\n`
     txt += `  *» Nro* : ${index + 1}\n`
