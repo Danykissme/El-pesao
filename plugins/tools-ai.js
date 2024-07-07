@@ -8,8 +8,8 @@ let { msg } = await Starlights.openAi(text)
 await conn.reply(m.chat, msg, m, rcanal)
 } catch {
 }}
-handler.help = ['ai *<petición>*']
+handler.help = ['sofia *<petición>*']
 handler.tags = ['tools']
-handler.command = /^(miku|ai|ia|chatgpt|gpt)$/i
+handler.command = /^(sofia|ai|ia|chatgpt|gpt)$/i
 handler.register = true
 export default handler
