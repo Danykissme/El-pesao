@@ -59,31 +59,35 @@ let handler = async (m, { conn, usedPrefix }) => {
    }
    let timestamp = speed()
    let latensi = speed() - timestamp
-   let teks = ` –  *I N F O  -  B O T*
+   let teks = ` │: : 💻 : :₊⸱ ᮨֺ݂ *INFO - BOT*
 
-┌  ✩  *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
-│  ✩  *Prefijo* : [  ${usedPrefix}  ]
-│  ✩  *Total Plugins* : ${totalf}
-│  ✩  *Plataforma* : ${platform()}
-│  ✩  *Servidor* : ${hostname()}
-│  ✩  *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
-│  ✩  *FreeRAM* : ${format(freemem())}
-│  ✩  *Speed* : ${latensi.toFixed(4)} ms
-│  ✩  *Uptime* : ${uptime}
-│  ✩  *Modo* : ${bot.public ? 'Privado' : 'Publico'}
-│  ✩  *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}* )
-│  ✩  *Grupos Registrados* : ${toNum(totalchats)} ( *${totalchats}* )
-└  ✩  *Registrados* : ${toNum(totalreg)} ( *${totalreg}* ) Usuarios
+││ . ✎  *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}
+││ . ✎  *Prefijo* : [  ${usedPrefix}  ]
+││ . ✎  *Total Plugins* : ${totalf}
+││ . ✎  *Plataforma* : ${platform()}
+││ . ✎  *Servidor* : ${hostname()}
+││ . ✎  *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}
+││ . ✎  *FreeRAM* : ${format(freemem())}
+││ . ✎  *Speed* : ${latensi.toFixed(4)} ms
+││ . ✎  *Uptime* : ${uptime}
+││ . ✎  *Modo* : ${bot.public ? 'Privado' : 'Publico'}
+││ . ✎ *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}* )
+││ . ✎  *Grupos Registrados* : ${toNum(totalchats)} ( *${totalchats}* )
+││ . ✎  *Registrados* : ${toNum(totalreg)} ( *${totalreg}* ) Usuarios
+│✦
+✦
 
- –  *I N F O  -  C H A T*
+│: : 💻 : :₊⸱ ᮨֺ݂ *INFO - CHAT*
 
-┌  ✩  *${groupsIn.length}* Chats en Grupos
-│  ✩  *${groupsIn.length}* Grupos Unidos
-│  ✩  *${groupsIn.length - groupsIn.length}* Grupos Salidos
-│  ✩  *${chats.length - groupsIn.length}* Chats Privados
-└  ✩  *${chats.length}* Chats Totales
+││ . ✎  *${groupsIn.length}* Chats en Grupos
+││ . ✎  *${groupsIn.length}* Grupos Unidos
+││ . ✎  *${groupsIn.length - groupsIn.length}* Grupos Salidos
+││ . ✎  *${chats.length - groupsIn.length}* Chats Privados
+││ . ✎  *${chats.length}* Chats Totales
+│✦
+✦
 
-*≡  _NodeJS Uso de memoria_*
+│: : 💻 : :₊⸱ ᮨֺ݂ *NodeJS Uso de memoria*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}`
 await conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎⭐˖ ⸙',body: false, previewType: 0, thumbnail: miniurl, sourceUrl: ''}}})
 }
