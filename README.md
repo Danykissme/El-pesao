@@ -91,7 +91,7 @@ npm start
 
 - Si la Bot tiene algún contactame ฅ^•ﻌ•^ฅ
 
-* <a href="https://wa.me/5218139760662"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+* <a href="https://wa.me/5350619467"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 ---------
 
@@ -119,6 +119,6 @@ npm start
 <div align="center">
   <h1 align="center">Editor y Propietario de la Bot</h1>
 
-<a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/qRfKp3t/file.jpg" width="300" height="300" alt="おDaniel"/></a>
+<a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/R9YZDXJ/file.jpg" width="300" height="300" alt="DanySR"/></a>
 
 `༺𝖲𝖮𝖥𝖨𝖠 - 𝖡𝖮𝖳༻ / STAFF XB²🫧 _ By DanySR`
