@@ -5,12 +5,12 @@ let caption = `
 ╭─「 *Usuarios Baneados* 」
 ║❥ *Total* : ${users.length} ${users ? '\n' + users.map(([jid], i) => `
 ║❥ ${isOwner ? '@' + jid.split`@`[0] : jid}`.trim()).join('\n') : '├'}
-╰────
+╰───|⛄⊱SOFIA-BOT⊰☃️|───
 
 ╭─「 *Chats Baneados* 」
 ║❥ *Total* : ${chats.length} ${chats ? '\n' + chats.map(([jid], i) => `
 ║❥ ${isOwner ? '@' + jid.split`@`[0] : jid}`.trim()).join('\n') : '├'}
-╰────
+╰───|☃️⊱SOFIA-BOT⊰⛄|───
 `.trim()
 m.reply(caption, null, {mentions: conn.parseMention(caption)})}
 handler.help = ['banlist']
