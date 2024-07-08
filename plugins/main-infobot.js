@@ -89,11 +89,12 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 │: : 💻 : :₊⸱ ᮨֺ݂ *NodeJS Uso de memoria*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}`
-await conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎⭐˖ ⸙',body: false, previewType: 0, thumbnail: miniurl, sourceUrl: ''}}})
+await conn.reply(m.chat, teks, m, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷🌻╎Info - Bot╎🌻˖ ⸙',body: false, previewType: 0, thumbnail: miniurl, sourceUrl: ''}}})
 }
 handler.help = ['info']
 handler.tags = ['main']
 handler.command = ['info', 'infobot']
+handler. owner = true
 
 export default handler
 
