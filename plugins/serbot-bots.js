@@ -22,4 +22,5 @@ await _envio.sendFile(m.chat, img, 'thumbnail.jpg', responseMessage, m, false, {
 handler.command = ['listjadibot', 'bots']
 handler.help = ['bots']
 handler.tags = ['serbot']
+handler.premium = true
 export default handler
