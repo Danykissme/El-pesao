@@ -1,4 +1,4 @@
-<h1 align="center"> ༺𝖲𝖮𝖥𝖨𝖠 - 𝖡𝖮𝖳༻
+<h1 align="center"> ༺🌹𝖲𝖮𝖥𝖨𝖠 - 𝖡𝖮𝖳🌹༻
 </p>
 <p>
         <img src= "https://telegra.ph/file/b599a653d13758536a6cf.jpg">
@@ -80,7 +80,7 @@ npm start
 - [x] Bienvenida personalizada
 - [x] Chatbot (simsimi)
 - [x] Crear sticker de image/video/gif/url
-- [x] SubBot (Jadibot)
+- [ ] SubBot (Jadibot)
 - [x] Juego RPG
 - [x] Descarga de música y video de YT
 - [ ] Otros
@@ -89,7 +89,7 @@ npm start
 
 ## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Contacto" width="42" height="42"> Contacto
 
-- Si la Bot tiene algún contactame ฅ^•ﻌ•^ฅ
+- Si desea usar la bot contactame ฅ^•ﻌ•^ฅ
 
 * <a href="https://wa.me/5350619467"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
@@ -121,4 +121,4 @@ npm start
 
 <a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/R9YZDXJ/file.jpg" width="300" height="300" alt="DanySR"/></a>
 
-`༺𝖲𝖮𝖥𝖨𝖠 - 𝖡𝖮𝖳༻ / STAFF XB²🫧 _ By DanySR`
+`༺𝖲𝖮𝖥𝖨𝖠 - 𝖡𝖮𝖳༻ / STAFF XB² _ By DanySR`
