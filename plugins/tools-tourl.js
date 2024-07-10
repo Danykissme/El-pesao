@@ -5,24 +5,24 @@ import fetch from 'node-fetch'
 let handler = async (m) => {
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-  if (!mime) return conn.reply(m.chat, '🚩 Responde a una *Imagen* o *Vídeo.*', m, rcanal)
-  await m.react('🕓')
+  if (!mime) return conn.reply(m.chat, '🌻 Responde a una *Imagen* o *Vídeo.*', m, rcanal)
+  await m.react('⌛')
   try {
   let media = await q.download()
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
   let link = await (isTele ? uploadImage : uploadFile)(media)
   let img = await (await fetch(`${link}`)).buffer()
-  let txt = `*乂  T E L E G R A P H  -  U P L O A D E R*\n\n`
-      txt += `  *» Enlace* : ${link}\n`
-      txt += `  *» Acortado* : ${await shortUrl(link)}\n`
-      txt += `  *» Tamaño* : ${formatBytes(media.length)}\n`
-      txt += `  *» Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
-      txt += `🚩 *${textbot}*`
+  let txt = `᥀🔗୭ *T E L E G R A P H - U P L O A D E R*᥀🔗୭\n\n`
+      txt += `  *☩ Enlace* : ${link}\n`
+      txt += `  *☩ Acortado* : ${await shortUrl(link)}\n`
+      txt += `  *☩ Tamaño* : ${formatBytes(media.length)}\n`
+      txt += `  *☩ Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
+      txt += `🛡️ *${textbot}*`
 
 await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
 await m.react('✅')
 } catch {
-await m.react('✖️')
+await m.react('❌')
 }}
 handler.help = ['tourl']
 handler.tags = ['tools']
