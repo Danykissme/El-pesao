@@ -70,7 +70,7 @@ palabraAgregada = true;
 }
 
 // Diseño 
-const LETRAS_POSIBLES = "ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓜⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ"
+const LETRAS_POSIBLES = "🄰🄱🄲🄳🄴🄵🄶🄷🄸🄹🄺🄻🄼🄽🄾🄿🅀🅁🅂🅃🅄🅅🅆🅇🅈🅉"
 const numerosUni = ["⓿", "❶", "❷", "❸", "❹", "❺", "❻", "❼", "❽", "❾", "❿", "⓫", "⓬", "⓭", "⓮", "⓯", "⓰", "⓱", "⓲", "⓳", "⓴"]
 let sopaDeLetrasConBordes = ""
 sopaDeLetrasConBordes += "     " + [...Array(LADO).keys()].map(num => numerosUni[num]).join(" ") + "\n"
@@ -160,7 +160,7 @@ intentos -= 1
 await m.reply(`😮‍💨 *INCORRECTO. TE QUEDAN _${intentos}_ INTENTOS!!*${intentos === 1 ? '' : `\n*PALABRA A ENCONTRAR:* \`\`\`${sopaPalabra}\`\`\``}\n\n${intentos === 1 ? `\`\`\`💡 PISTA!!\`\`\`\n*LA PALABRA _${sopaPalabra}_ SE ENCUENTRA EN LA DIRECCIÓN _"${cambioLetra}"_*\n\n` : ''}${sopaNube}`)
 }}
 }}
-
+handler.help = ('sopa')
 handler.command = /^(buscarpalabra|sopa|soup|wordsearch|wordfind|spdeletras|spletras|sppalabras|spalabras|spdepalabras)$/i
 handler.register = true
 export default handler
