@@ -11,7 +11,7 @@ try {
     })
     throw stiker.toString()
 } catch {
-await m.react('✖️')
+await m.react('❌')
 }}
 handler.help = ['scat']
 handler.tags = ['sticker']
