@@ -3,12 +3,12 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command, args, text }) => {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) return conn.reply(m.chat, `🚩 Responde a una *Imagen* o *Video.*`, m)
-if (!text) return conn.reply(m.chat, `🚩 Ingresa el peso nuevo de la imágen/video.`, m)
-await m.react('🕓')
+if (!mime) return conn.reply(m.chat, `🌻 Responde a una *Imagen* o *Video.*`, m)
+if (!text) return conn.reply(m.chat, `🌻 Ingresa el peso nuevo de la imágen/video.`, m)
+await m.react('⌛')
 try {
-if (isNaN(text)) return conn.reply(m.chat, 'Sólo números.', m).then(_ => m.react('✖️'))
-if (!/image\/(jpe?g|png)|video|document/.test(mime)) return conn.reply(m.chat, `Formato no soportado.`, m)
+if (isNaN(text)) return conn.reply(m.chat, 'Sólo números.', m).then(_ => m.react('❌'))
+if (!/image\/(jpe?g|png)|video|document/.test(mime)) return conn.reply(m.chat, `❌Formato no soportado.`, m)
 let img = await q.download()
 let url = await uploadImage(img)
 
@@ -20,7 +20,7 @@ return conn.sendMessage(m.chat, { video: {url: url}, caption: ``, fileLength: `$
 await m.react('✅')
 }
 } catch {
-await m.react('✖️')
+await m.react('❌')
 }}
 handler.tags = ['tools']
 handler.help = ['tamaño *<cantidad>*']
