@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   if (/video|audio/.test(mime)) {
   let buffer = await q.download()
   let user = global.db.data.users[m.sender]
-  await m.react('🕓')
+  await m.react('⌛')
   let { status, metadata } = await acr.identify(buffer)
   if (status.code !== 0) throw status.msg 
   let { title, artists, album, genres, release_date } = metadata.music[0]
@@ -23,15 +23,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let yt = await youtubedl(v).catch(async () => await youtubedlv2(v))
   let url = await yt.audio['128kbps'].download()
   let title2 = await yt.title
-  let txt = '`乂  W H A T M U S I C  -  T O O L S`\n\n'
-      txt += `	✩   *Titulo* : ${title}${artists ? `\n	✩   *Artists* : ${artists.map(v => v.name).join(', ')}` : ''}`
-      txt += `${album ? `\n	✩   *Album* : ${album.name}` : ''}${genres ? `\n	✩   *Genero* : ${genres.map(v => v.name).join(', ')}` : ''}\n`
-      txt += `	✩   *Fecha de lanzamiento* : ${release_date}\n\n`
-      txt += `> 🚩 *${textbot}*`
+  let txt = '`᥀🎧୭ *W H A T S M U S I C - T O O L S* ᥀🎧୭`\n\n'
+      txt += `	│☩  *Titulo* : ${title}${artists ? `\n	│☩   *Artists* : ${artists.map(v => v.name).join(', ')}` : ''}`
+      txt += `${album ? `\n	│☩   *Album* : ${album.name}` : ''}${genres ? `\n	│☩   *Genero* : ${genres.map(v => v.name).join(', ')}` : ''}\n`
+      txt += `	│☩   *Fecha de lanzamiento* : ${release_date}\n\n`
+      txt += `> 🛡️ *${textbot}*`
   await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
   await conn.sendFile(m.chat, url, title2 + '.mp3', null, m, false, { mimetype: 'audio/mpeg', asDocument: user.useDocument })
   await m.react('✅')
-  } else return conn.reply(m.chat, `🚩 Etiqueta un audio o video de poca duración con el comando *${usedPrefix + command}* para ver que música contiene.`, m, rcanal)
+  } else return conn.reply(m.chat, `🛡️ Etiqueta un audio o video de poca duración con el comando *${usedPrefix + command}* para ver que música contiene.`, m, rcanal)
 }
 handler.help = ['whatmusic *<audio/video>*']
 handler.tags = ['tools']
