@@ -7,8 +7,8 @@ if (!m.quoted) return conn.reply(m.chat,  `🛡️ Etiqueta el *Video o Audio
 if(!text) return conn.reply(m.chat, `🛡️ Ingresa el nombre para guardar el documento.`, m, rcanal)
 if (!/audio|video/.test(mime)) return conn.reply(m.chat,  `🛡️ Etiqueta el *Video o Audio* que desea convertir en documento.`, m, rcanal)
 let media = await q.download?.()
-if (!media) throw m.react('✖️')
-await m.react('🕓')
+if (!media) throw m.react('❌')
+await m.react('⌛')
 if (/video/.test(mime)) {
 return conn.sendMessage(m.chat, { document: media, mimetype: 'video/mp4', fileName: `${text}.mp4`}, {quoted: m}).then(_ => m.react('✅'))
 } else if (/audio/.test(mime)) {
