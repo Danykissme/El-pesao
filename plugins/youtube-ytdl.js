@@ -1,8 +1,8 @@
 import { youtubedlv2, youtubedl } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, command }) => {
-  if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa un enlace del vídeo de YouTube junto al comando.`, m, rcanal)
-  await m.react('🕓')
+  if (!args[0]) return conn.reply(m.chat, `🛡️ Ingresa un enlace del vídeo de YouTube junto al comando.`, m, rcanal)
+  await m.react('⌛')
   let v = args[0]
 
   let resolutions = ["144p", "240p", "360p", "480p", "720p", "1080p"]
@@ -41,10 +41,10 @@ let handler = async (m, { conn, args, command }) => {
   }
   
   if (dlUrl) {
-  let txt = `*乂  Y O U T U B E  -  Y T D L*\n\n`
-      txt += `	✩   *Título* : ${title}\n`
-      txt += `	✩   *Tamaño* : ${size}\n`
-      txt += `	✩   *Calidad* : ${selectedResolution}\n\n`
+  let txt = `᥀🎧୭ *Y U T U B E - Y T D L* ᥀🎧୭\n\n`
+      txt += `│☩   *Título* : ${title}\n`
+      txt += `│☩   *Tamaño* : ${size}\n`
+      txt += `│☩   *Calidad* : ${selectedResolution}\n\n`
       txt += `*- ↻ El video se esta enviando espera un momento, soy lenta. . .*`
 conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
 await conn.sendFile(m.chat, dlUrl, title + '.mp4', `
@@ -54,7 +54,7 @@ await conn.sendFile(m.chat, dlUrl, title + '.mp4', `
 
 await m.react('✅')
 } else {
-await m.react('✖️')
+await m.react('❌')
 }}
 handler.help = ['ytdl *<link yt>*']
 handler.tags = ['downloader', 'premium']
