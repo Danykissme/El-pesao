@@ -30,7 +30,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   if (!aa) return conn.sendFile(m.chat, json.link_song, 'coba-lagi.mp3', '', m);
 };
 
-handler.help = ['cancion'];
+handler.help = ['cancion','tebaklahu'];
 handler.tags = ['game'];
 handler.command = /^cancion|canción$/i;
 handler.reg = true
