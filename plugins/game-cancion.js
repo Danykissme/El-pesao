@@ -6,31 +6,33 @@ const handler = async (m, {conn, usedPrefix}) => {
   conn.tebaklagu = conn.tebaklagu ? conn.tebaklagu : {};
   const id = m.chat;
   if (id in conn.tebaklagu) {
-    conn.reply(m.chat, 'Todavía hay canciones sin respuesta en este chat.', conn.tebaklagu[id][0]);
+    conn.reply(m.chat, '*Todavía hay canciones sin respuesta en este chat.*', conn.tebaklagu[id][0]);
     throw false;
   } // 5LTV57azwaid7dXfz5fzJu
   const res = await fetchJson(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/tebaklagu.json`);
   const json = res[Math.floor(Math.random() * res.length)];
   const caption = `
-ADIVINA EL TITULO DE LA CANCION
-Tiempo ${(timeout / 1000).toFixed(2)} segundos
-Escribe *${usedPrefix}pista* Para obtener una pista
-Premio: ${poin} XP
-RESPONDE A ESTE MENSAJE CON LAS RESPUESTAS!`.trim();
+  ╭━ 🎧ADIVINA LA CANCION🎧 ━
+┃ 𝗧𝗜𝗘𝗠𝗣𝗢: ${(timeout / 1000).toFixed(2)} segundos
+┃ 𝗚𝗔𝗡𝗔𝗡𝗖𝗜𝗔:: ${poin} XP
+┃ ♡ Buena Suerte 
+┃ ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴇꜱᴛᴇ ᴍᴇɴꜱᴀᴊᴇ
+╰━━ ⬣ 🖤SOFIA-BOT 🌹⬣ ━━`.trim();
   conn.tebaklagu[id] = [
     await m.reply(caption),
     json, poin,
     setTimeout(() => {
-      if (conn.tebaklagu[id]) conn.reply(m.chat, `Se acabó el tiempo!\nLa respuesta es ${json.jawaban}`, conn.tebaklagu[id][0]);
+      if (conn.tebaklagu[id]) conn.reply(m.chat, ````╭━⏱️SIN TIEMPO!⏱️━\n┃ Respuesta:\n┃  ${json.jawaban}\n╰━⬣🖤SOFIA-BOT🌹⬣━````, conn.tebaklagu[id][0]);
       delete conn.tebaklagu[id];
     }, timeout),
   ];
   const aa = await conn.sendMessage(m.chat, {audio: {url: json.link_song}, fileName: `error.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   if (!aa) return conn.sendFile(m.chat, json.link_song, 'coba-lagi.mp3', '', m);
 };
-handler.help = ['tebaklagu'];
+handler.help = ['cancion'];
 handler.tags = ['game'];
 handler.command = /^cancion|canción$/i;
+handler.reg = true
 export default handler;
 async function fetchJson(url, options) {
   try {
