@@ -34,7 +34,7 @@ const defaultMenu = {
 %readmore
 ╭┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄ׅׅ┄꯭ׂ─╮
 │: : 💖 : :₊⸱ ᮨֺ݂ *INFO - BOT*
-││ . *✎Modo:* No Publico
+││ . *✎Bot:* No Publico
 ││ . *✎Baileys:* Multi Device
 ││ . *✎Tiempo activo:* %muptime
 ││ . *✎Usuarios:* %totalreg
