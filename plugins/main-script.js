@@ -18,7 +18,7 @@ let img = await (await fetch(`https://i.ibb.co/9c9cyW0/file.jpg`)).buffer()
 
 await conn.sendAi(m.chat, botname, textbot, txt, img, img, canal, m)
 } catch {
-await m.react('✖️')
+await m.react('❌')
 }}
 handler.help = ['script']
 handler.tags = ['main']
