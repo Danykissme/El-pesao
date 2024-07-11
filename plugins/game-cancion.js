@@ -22,18 +22,21 @@ const handler = async (m, {conn, usedPrefix}) => {
     await m.reply(caption),
     json, poin,
     setTimeout(() => {
-      if (conn.tebaklagu[id]) conn.reply(m.chat, ````╭━⏱️SIN TIEMPO!⏱️━\n┃ Respuesta:\n┃  ${json.jawaban}\n╰━⬣🖤SOFIA-BOT🌹⬣━````, conn.tebaklagu[id][0]);
+      if (conn.tebaklagu[id]) conn.reply(m.chat, `.```╭━⏱️SIN TIEMPO!⏱️━\n┃ Respuesta:\n┃  ${json.jawaban}\n╰━⬣🖤SOFIA-BOT🌹⬣━```.`, conn.tebaklagu[id][0]);
       delete conn.tebaklagu[id];
     }, timeout),
   ];
   const aa = await conn.sendMessage(m.chat, {audio: {url: json.link_song}, fileName: `error.mp3`, mimetype: 'audio/mpeg'}, {quoted: m});
   if (!aa) return conn.sendFile(m.chat, json.link_song, 'coba-lagi.mp3', '', m);
 };
+
 handler.help = ['cancion'];
 handler.tags = ['game'];
 handler.command = /^cancion|canción$/i;
 handler.reg = true
+
 export default handler;
+
 async function fetchJson(url, options) {
   try {
 options ? options : {};
