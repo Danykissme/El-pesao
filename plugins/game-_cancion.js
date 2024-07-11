@@ -20,4 +20,4 @@ const handler = {
   },
   exp: 0,
 };
-export default handler;
+export default handler = true;
