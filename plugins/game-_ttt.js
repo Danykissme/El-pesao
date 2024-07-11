@@ -93,6 +93,8 @@ ${isWin ? `@${(isSurrender ? room.game.currentTurn : room.game.winner).split('@'
   return !0;
 }
 handler.help = ['ttt <text>']
+handler.tags = ('games')
 handler.command = /^(ttt|TTT)$/i;
 handler.registrer = true
+
 export default handler;
