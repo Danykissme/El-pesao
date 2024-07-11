@@ -20,15 +20,7 @@ let tekateki = JSON.parse(fs.readFileSync(`./plugins/_acertijo.json`))
 let json = tekateki[Math.floor(Math.random() * tekateki.length)]
 let _clue = json.response
 let clue = _clue.replace(/[A-Za-z]/g, '_')
-let caption = '
-╭━ 💡ACERTIJO💡━
-┃*${json.question}*
-┃𝗧𝗜𝗘𝗠𝗣𝗢:* ${(cooldown / 1000).toFixed(2)} segundos
-┃ 𝗚𝗔𝗡𝗔𝗡𝗖𝗜𝗔:* +${poin} Exp
-┃ ♡ Buena Suerte
-┃ ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴇꜱᴛᴇ ᴍᴇɴꜱᴀᴊᴇ 
-╰━━ ⬣ 🖤SOFIA-BOT 🌹⬣ ━━.
-`.trim()
+let caption = '╭━ 💡ACERTIJO💡━\n┃*${json.question}*\n┃𝗧𝗜𝗘𝗠𝗣𝗢:* ${(cooldown / 1000).toFixed(2)} segundos\n┃ 𝗚𝗔𝗡𝗔𝗡𝗖𝗜𝗔:* +${poin} Exp\n┃ ♡ Buena Suerte\n┃ ʀᴇꜱᴘᴏɴᴅᴇ ᴀ ᴇꜱᴛᴇ ᴍᴇɴꜱᴀᴊᴇ \n╰━━ ⬣ 🖤SOFIA-BOT 🌹⬣ ━━`.trim()
 conn.tekateki[id] = [
 await conn.reply(m.chat, caption, m), json, poin,
 setTimeout(async () => {
@@ -40,9 +32,12 @@ delete conn.tekateki[id]
 ]
 global.db.data.users[m.sender].lastAcet = now
 }
+
 handler.help = ['acertijo']
 handler.tags = ['game']
 handler.command = /^(acertijo|acert|pregunta|adivinanza|tekateki)$/i
+handler.reg = true
+
 export default handler
 
 function msToTime(duration) {
