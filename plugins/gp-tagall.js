@@ -1,13 +1,13 @@
 let handler = async (m, { conn, text, participants, isAdmin, isOwner, groupMetadata }) => {
     let users = participants.map(u => u.id).filter(v => v !== conn.user.jid)
-    m.reply(`▢ Grupo : *${groupMetadata.subject}*\n▢ Miembros : *${participants.length}*${text ? `\n▢ Mensaje : ${text}\n` : ''}\n┌───⊷ *MENTIONS*\n` + users.map(v => '▢ @' + v.replace(/@.+/, '')).join`\n` + '\n└──✪ CURI ┃ ᴮᴼᵀ ✪──', null, {
+    m.reply(`┌─────⊷ *Hola Niggas*\n ▢ Grupo:*${groupMetadata.subject}*\n▢ Miembros : *${participants.length}*${text ? `\n▢ Mensaje : ${text}\n`.''}\n` + users.map(v => '▢ @' + v.replace(/@.+/, '')).join`\n` + '└──🖤 SOFIA-BOT🌹──⊷', null, {
         mentions: users
     })
 }
 
-handler.help = ['tagall']
+handler.help = ['invocar']
 handler.tags = ['group']
-handler.command = ['tagall','all']
+handler.command = ['dinamica','todos']
 handler.admin = true
 handler.group = true
 
