@@ -22,7 +22,7 @@ const handler = async (m, {conn, usedPrefix}) => {
     await m.reply(caption),
     json, poin,
     setTimeout(() => {
-      if (conn.tebaklagu[id]) conn.reply(m.chat, `.```╭━⏱️SIN TIEMPO!⏱️━\n┃ Respuesta:\n┃  ${json.jawaban}\n╰━⬣🖤SOFIA-BOT🌹⬣━```.`, conn.tebaklagu[id][0]);
+      if (conn.tebaklagu[id]) conn.reply(m.chat, `╭━⏱️SIN TIEMPO!⏱️━\n┃ Respuesta:\n┃  ${json.jawaban}\n╰━⬣🖤SOFIA-BOT🌹⬣━`, conn.tebaklagu[id][0]);
       delete conn.tebaklagu[id];
     }, timeout),
   ];
