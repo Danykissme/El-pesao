@@ -11,8 +11,10 @@ let { url } = json
 let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} le dio besos a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
+
 handler.help = ['kiss <@user>']
 handler.tags = ['fun']
 handler.command = /^(kiss|skiss|kis|besos|beso)$/i
 handler.register = true
+
 export default handler
