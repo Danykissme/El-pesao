@@ -4,7 +4,7 @@ import axios from 'axios'
 let handler = async (m, { conn, text }) => {
    if (!text) return conn.reply(m.chat, '🛡️ Ingresa un texto junto al comando.', m, rcanal)
    if (text.length > 30) return conn.reply(m.chat, '⚠️Solo se permiten 30 caracteres como Máximo⚠️.', m, rcanal)
-   await m.react('🕓')
+   await m.react('⌛')
    try {
    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => global.imgbot.noprofileurl)
    const obj = {
@@ -38,7 +38,7 @@ let handler = async (m, { conn, text }) => {
    await await conn.sendFile(m.chat, stick, 'sticker.webp', '', m)
    await m.react('✅')
 } catch {
-await m.react('✖️')
+await m.react('❌')
 }}
 handler.help = ['globito *<texto>*']
 handler.tags = ['sticker']
