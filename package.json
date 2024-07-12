@@ -1,5 +1,5 @@
 {
-  "name": "༺SOFIA-BOT༻",
+  "name": "🌹SOFIA-BOT🌹",
   "version": "2.0",
   "description": "Simple WhatsApp Bot Multi Device",
   "main": "index.js",
@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/StarlightsTeam/Ai-Hoshino",
+  "homepage": "https://github.com/Danykissme/Sofia-Bot.git",
   "author": {
     "name": "DanySR"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StarlightsTeam/Ai-Hoshino.git"
+    "url": "git+https://github.com/Danykissme/Sofia-Bot.git"
   },
   "bugs": {
-    "url": "https://github.com/StarlightsTeam/Ai-Hoshino/issues"
+    "url": "https://github.com/Danykissme/Sofia-Bot.git/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
