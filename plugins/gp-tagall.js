@@ -7,7 +7,6 @@ let handler = async (m, { conn, text, participants, isAdmin, isOwner, groupMetad
 handler.help = ('invocar')
 handler.tags = ('group')
 handler.command = ('dinamica','todos')
-handler.reg = true
 handler.admin = true
 handler.group = true
 export default handler
