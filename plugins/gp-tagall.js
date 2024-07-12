@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, participants, isAdmin, isOwner, groupMetad
     })
 }
 handler.help = ('invocar')
-handler.tags = ('group')
+handler.tag = ('group')
 handler.command = ('dinamica','todos')
 handler.admin = true
 handler.group = true
