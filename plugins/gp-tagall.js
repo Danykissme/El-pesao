@@ -9,4 +9,5 @@ handler.tag = ('group')
 handler.command = ('dinamica','todos')
 handler.admin = true
 handler.group = true
-export default handler
+
+export default handler;
