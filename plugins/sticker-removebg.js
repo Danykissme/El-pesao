@@ -21,7 +21,11 @@ await mensajesEditados(conn, m)
 await conn.sendMessage(m.chat, { image: { url: json.url.result }, caption: null }, { quoted: m })
 await conn.sendFile(m.chat, stiker ? stiker : await sticker(false, json.url.result, global.packname, global.author), 'sticker.webp', '', null, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: packname, body: '• STICKER •', mediaType: 2, sourceUrl: redesMenu.getRandom(), thumbnail: gataImg.getRandom()}}})
 }
+handler.help = ['removebg']
+handler.tag = ['sticker']
 handler.command = /^(s?removebg)$/i
+handler.reg = true
+
 export default handler
 
 const isUrl = (text) => {
