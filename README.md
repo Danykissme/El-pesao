@@ -121,4 +121,4 @@ npm start
 
 <a href="https://github.com/StarlightsTeam"><img src="https://i.ibb.co/R9YZDXJ/file.jpg" width="300" height="300" alt="DanySR"/></a>
 
-`༺𝖲𝖮𝖥𝖨𝖠 - 𝖡𝖮𝖳༻ / STAFF XB² _ By DanySR`
+`༺𝖲𝖮𝖥𝖨𝖠 - 𝖡𝖮𝖳༻ / ANONYMOUS BOSS _ By DanySR`
