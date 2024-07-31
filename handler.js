@@ -409,8 +409,8 @@ global.dfail = (type, m, conn, usedPrefix) => {
         premium: `⚠️Tu ere pobre , tu no tiene ayfon⚠️*`,
         group: `*⚠️Comando solo para grupos⚠️*`,
         private: `*⚠️Comando solo para mi Chat *Privado⚠️*.`,
-        admin: `*No sos un dios inmundo animal*`,
-        botAdmin: `*Dame admin que lo baneo*`,
+        admin: `*Apoco si mi todo pendejo*`,
+        botAdmin: `*Eres pendejo o k, dame admin puto*`,
         unreg: `⚠️Para usar mis comandos debes estar *Registrado.*\n\nPara usar el bot debes registrarte primero\n\nUtiliza: */reg nombre.edad*\n\n_Ejemplo: */reg DanySR.edad*_\n\nNo pongas los * *`,
         restrict: `*⚠️ Hola, esta característica está deshabilitada.⚠️*`  
     }[type]
