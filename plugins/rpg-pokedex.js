@@ -34,7 +34,7 @@ ${json.description}
 };
 
 handler.help = ['pokedex <pokemon>'];
-handler.tags = ['GAME'];
+handler.tags = ['rpg'];
 handler.command = /^pokedex/i;
 
 export default handler;
