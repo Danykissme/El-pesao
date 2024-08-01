@@ -29,7 +29,7 @@ const defaultMenu = {
   before: `
 *─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-“ ¡Hey, %name ! Soy Sofia un Bot que aprende de ti :D ”
+“ ¡Hey, %name ! Soy Sofia un Bot, ¿En que puedo ayudarte? ”
 %readmore
 ╭┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄꯭ׂ─┄ׅׅ┄꯭ׂ─┄ׅׅ┄꯭ׂ─╮
 │: : 💖 : :₊⸱ ᮨֺ݂ *INFO - BOT*
@@ -37,6 +37,8 @@ const defaultMenu = {
 ││ . *✎Baileys:* Multi Device
 ││ . *✎Tiempo activo:* %muptime
 ││ . *✎Usuarios:* %totalreg
+││ . *✎MoonLight team:*
+││ . *✎:* https://whatsapp.com/channel/0029Vablj8M05MUnustq3q1S
 │✦
 ✦
 %readmore
