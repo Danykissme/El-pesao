@@ -27,8 +27,8 @@ global.packname = ``
 global.author = '@danysr81'
 global.wait = '🌹 𝖠𝖦𝖴𝖠𝖱𝖣𝖤 𝖴𝖭 𝖬𝖮𝖬𝖤𝖭𝖳𝖮...'
 global.botname = '༺𝖲𝖮𝖥𝖨𝖠-𝖡𝖮𝖳༻'
-global.textbot = `Powered by STAFF XB²🫧`
-global.listo = '*Aqui tiene 🖤.*'
+global.textbot = `Powered by Moonlight Team🌙`
+global.listo = '*Aqui tiene.*'
 global.namechannel = '༺🌹𝖲𝖮𝖥𝖨𝖠-𝖡𝖮𝖳🌹༻'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
